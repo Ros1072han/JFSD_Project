@@ -1,0 +1,41 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+<web-app>
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <jsp-file>/views/admin.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>InstructorServlet</servlet-name>
+    <jsp-file>/views/instructor.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>StudentServlet</servlet-name>
+    <jsp-file>/views/student.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>ContentCreatorServlet</servlet-name>
+    <jsp-file>/views/contentCreator.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InstructorServlet</servlet-name>
+    <url-pattern>/instructor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/student</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContentCreatorServlet</servlet-name>
+    <url-pattern>/contentCreator</url-pattern>
+  </servlet-mapping>
+</web-app>
+
